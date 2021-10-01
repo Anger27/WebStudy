@@ -1,0 +1,13 @@
+.rootWrapper {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    height: 100vh;
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+section {
+    background-color: yellow;
+}

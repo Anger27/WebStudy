@@ -1,0 +1,10 @@
+.rootWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rootWrapper > div {
+    height: 10vh;
+    background-color: skyblue;
+    border: medium solid black;
+}

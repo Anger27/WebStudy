@@ -1,0 +1,30 @@
+.rootWrapper {
+    display: grid;
+    grid-template-rows: 1fr 9fr 1fr;
+    height: 100vh;
+}
+
+header {
+    background-color: red;
+}
+
+.middleWrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.middleWrapper > nav {
+    background-color: blueviolet;
+}
+
+.middleWrapper > section {
+    background-color: yellow;
+}
+
+.middleWrapper > aside {
+    background-color: gray;
+}
+
+footer {
+    background-color: green;
+}

@@ -1,0 +1,13 @@
+.gridWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40vh;
+    height: 40vh;
+    background-color: whitesmoke;
+}
+
+.gridWrapper > div {
+    border: medium solid black;
+    font-size: 2vw;
+}
