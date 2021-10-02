@@ -1,0 +1,93 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    background-color: gray;
+}
+
+.topWrapper {
+    height: 10vh;
+}
+
+.topWrapper > header {
+    height: 80%;
+    background-color: skyblue;
+}
+
+.topWrapper > nav {
+    height: 20%;
+    background-color: brown;   
+}
+
+.middleWrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.middleWrapper > section {
+    background-color: greenyellow;
+}
+
+.banner {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    height: 360px;
+}
+
+.banner > .bannerMain {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: gray;
+}
+
+.banner > .bannerMain  > .bannerMainImg{
+    background-color: mediumpurple;
+}
+
+.banner > .bannerSubList {
+    background-color: mediumpurple;
+}
+
+.banner > .bannerSubList > ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: moccasin;
+    list-style-type: none;
+}
+
+.banner > .bannerSubList > ul > li{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.banner > .bannerSubList > ul > li > .bannerSubImg{
+    background-color: skyblue;
+}
+
+.articleTag {
+    height: 40px;
+    background-color: slategray;
+}
+
+.articleList > ul{
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: moccasin;
+    list-style-type: none;
+}
+
+.articleList > ul > li{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 80px;
+}
+
+.articleList > ul > li > .articleImg{
+    background-color: skyblue;
+}
+.middleWrapper > aside {
+    background-color: indianred;
+}
