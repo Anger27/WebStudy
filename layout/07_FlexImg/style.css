@@ -1,0 +1,23 @@
+.imgFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.flexItem {
+    flex-grow: 1;
+    width: auto;
+    height: 222px;
+    max-width: 359px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: slategray;
+}
+
+.flexItem > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
