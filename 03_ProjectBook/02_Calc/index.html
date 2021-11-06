@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Calc</title>
+</head>
+<body>
+  <form name="cal">
+    <table>
+      <caption>Calc</caption>
+      <tr>
+        <th colspan="4"><input type="text" name="result" value="0"></th>
+      </tr>
+      <tr>
+        <td><input type="button" value="7"></td>
+        <td><input type="button" value="8"></td>
+        <td><input type="button" value="9"></td>
+        <td><input type="button" value="+"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4"></td>
+        <td><input type="button" value="5"></td>
+        <td><input type="button" value="6"></td>
+        <td><input type="button" value="-"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1"></td>
+        <td><input type="button" value="2"></td>
+        <td><input type="button" value="3"></td>
+        <td><input type="button" value="*"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" value="0"></td>
+        <td><input type="button" value="%"></td>
+        <td><input type="button" value="/"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" class="cls_btn" value="clear"></td>
+        <td colspan="2"><input type="button" class="result_btn" value="="></td>
+      </tr>
+    </table>
+  </form>
+<!-- practice -->
+  <form name="frm">
+    <p>input correct value</p>
+    <input type="text" name="a1" size="3" value="9"> + <input type="text" name="a2" size="3" value="3"> = <input type="text" name="answer" size="3">
+    <br><br>
+    <input type="button" onclick="result()" value="confirm">
+  </form>
+  <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
