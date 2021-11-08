@@ -7,6 +7,7 @@ var yDeg = 0;
 var indicator_num = 1;
 var indicator_length = page.length;
 var w = page[0].offsetWidth;
+var wDist = Math.tan(54) * w;
 var page_angle = 0;
 
 var hammer = new Hammer(wrapper);
@@ -15,11 +16,11 @@ function init_page() {
   w = page[0].offsetWidth;
 
   for (var i = 0; i < page.length; i++) {
-    page[i].style.transform = "rotateY(" + page_angle + "deg) translateZ(" + (w) + "px)";
+    page[i].style.transform = "rotateY(" + page_angle + "deg) translateZ(" + (wDist) + "px)";
     page_angle += 72;
   }
 
-  wrapper.style.transform = "translateZ(" + (-w) + "px) rotateY(" + yDeg + "deg)";
+  wrapper.style.transform = "translateZ(" + (-wDist) + "px) rotateY(" + yDeg + "deg)";
 }
 
 function init_indicator() {
@@ -34,7 +35,7 @@ function init_indicator() {
 function change_page(inum) {
   indicator_li[inum - 1].setAttribute("class", "active");
   yDeg = -72 * (inum - 1);
-  wrapper.style.transform = "translateZ(" + (-w) + "px) rotateY(" + yDeg + "deg)";
+  wrapper.style.transform = "translateZ(" + (-wDist) + "px) rotateY(" + yDeg + "deg)";
 
   for (var i = 0; i < indicator_length; i++) {
     indicator_li[i].removeAttribute("class");
